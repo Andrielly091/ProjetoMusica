@@ -50,6 +50,10 @@ h2 {
 	margin-top: 45px;
 }
 
+h3 {
+	margin-bottom: 15px;
+}
+
 img {
 	width: 260px;
 	border-radius: 50%;
@@ -71,4 +75,38 @@ img {
 
 .color {
 	background-color: #00C2CB;
+}
+
+.containerForm {
+	padding: 35px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	max-width: 50%;
+	margin: auto;
+}
+
+.containerForm img {
+	border: none;
+}
+
+.containerForm input{
+	border: 1px solid #1EA0C0;	
+	padding: 5px;
+	border-radius: 30px;
+	width: 280px;
+	margin-top: 10px;
+	margin-bottom: 5px;
+}
+
+.inputLabel {
+	width: 280px;
+	display: flex;
+	flex-direction: column;
+	margin: auto;
+}
+
+.all {
+	margin-top: 25px;
+	width: 1000px;
 }
