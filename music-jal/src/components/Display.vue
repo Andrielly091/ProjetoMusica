@@ -18,11 +18,11 @@
 <script>
 import { dataAlbum, arrCategorias } from "../services/data";
 
-console.log("dataAlbum", dataAlbum);
+// console.log("dataAlbum", dataAlbum);
 
 export default {
   name: "DisplayItem",
-  data: function () {
+  data() {
     return {
       categorias: arrCategorias,
       albuns: dataAlbum,

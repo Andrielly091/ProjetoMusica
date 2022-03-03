@@ -3,7 +3,7 @@
     <div class="information">
       <img class="logo" src="../assets/logo.png" />
       <h2>Music JAL</h2>
-   </div>
+    </div>
     <div class="form">
       <input
         type="text"
@@ -17,12 +17,8 @@
 
 <script>
 export default {
-  name: "CabecalhoItem",
-
-  props: {
-    name,
-  },
-  data: function () {
+  name: "CabecalhoI",
+  data() {
     return {
       input: "",
     };
@@ -48,14 +44,14 @@ header {
 .form {
   margin-right: 50px;
 }
-.information{
+.information {
   display: flex;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.information h2{
-  margin-left: 35px ;
+.information h2 {
+  margin-left: 35px;
 }
 </style>
