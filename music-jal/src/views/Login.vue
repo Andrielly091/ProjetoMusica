@@ -72,11 +72,7 @@
 export default {
   name: "LoginItem",
   data() {
-    return {
-      email: "",
-      senha: "",
-      exibirAlerta: false,
-    };
+
   },
   methods: {
     login() {
