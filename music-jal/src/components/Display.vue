@@ -1,14 +1,16 @@
 <template>
+  <p style="color:white;font-size:35px; margin-left:4%; margin-top:2%;">Categorias</p>
   <main>
     <div class="sidBar">
       <div class="btnCategory" v-for="categoria in categorias" :key="categoria">
         <p>{{ categoria }}</p>
       </div>
+      <h1>Álbuns</h1>
     </div>
     <div class="cards">
       <div class="card" v-for="a in albuns" :key="a.artistId">
-        <h2>{{ a.artistName }}</h2>
-        <p>{{ a.collectionName }}</p>
+        <h2 style="color:white;">{{ a.artistName }}</h2>
+        <p style="color:white; text-align:center;">{{ a.collectionName }}</p>
         <img class="imgCard" alt="thumb" v-bind:src=" a.artworkUrl100 " />
       </div>
     </div>
@@ -43,14 +45,18 @@ main {
   width: 100%;
   height: 100%;
   justify-content: space-between;
+  
 }
 .btnCategory {
   width: 170px;
   border: solid 1px;
   border-radius: 7px;
-  text-align: center;
   padding: 6px;
-  margin-top: 1px;
+  margin-top: 15px;
+  background:white;
+  margin-left:26%;
+  text-align:center;
+  
 }
 .btnCategory p:hover {
   width: 100%;
@@ -73,9 +79,21 @@ main {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-top:8%;
+  margin-left:5%;
 }
 
 .imgCard {
   width: 170px;
 }
+p{
+  margin-left:3px;
+}
+h1{
+  font-size:80px;
+  margin-top:-350%;
+  margin-left:310%;
+  color:white;
+}
+
 </style>

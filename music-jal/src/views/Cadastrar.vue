@@ -43,10 +43,10 @@ body {
 }
 .formulario {
   border: 1px solid white;
-  margin-top: 320%;
+  margin-top: 10%;
   width: 400px;
   height: 800%;
-  margin-left: 800%;
+  margin-left: 740%;
   background: white;
   border-radius: 2%;
 }

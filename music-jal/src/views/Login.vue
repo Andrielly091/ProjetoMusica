@@ -45,7 +45,7 @@ export default {
         .formulario{
   border: 1px solid white;
   margin-top: 5%;
-  width: 450px;
+  width: 400px;
   height: 800px;
   margin-left: 35%;
   background: white;

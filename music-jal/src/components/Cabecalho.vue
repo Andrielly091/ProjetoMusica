@@ -1,8 +1,9 @@
 <template>
   <header>
     <div class="information">
+    <button>VOLTAR</button>
       <img class="logo" src="../assets/logo.png" />
-      <h2>Music JAL</h2>
+      <p>Andrielly</p>
     </div>
     <div class="form">
       <input
@@ -10,7 +11,7 @@
         v-model="input"
         placeholder="Buscar por Artista ou Banda"
       />
-      <button @click="sbmtbtn">buscar</button>
+      <button @click="sbmtbtn">Pesquisar</button>
     </div>
   </header>
 </template>
@@ -34,12 +35,15 @@ export default {
 
 <style>
 .logo {
-  width: 70px;
+  width:75%;
+  height:80px;
+
 }
 header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background:white;
 }
 .form {
   margin-right: 50px;
@@ -53,5 +57,23 @@ header {
 
 .information h2 {
   margin-left: 35px;
+}
+button{
+  margin-left:12%;
+  padding: 6px 6px;
+  border:3px solid #23c5d7;
+  background:#23c5d7;
+  color:white;
+  border-radius:3px;
+  
+}
+p{
+  margin-left:15%;
+ 
+}
+input{
+  margin-left:-65%;
+  padding:7px 7px;
+ width:110%;
 }
 </style>
