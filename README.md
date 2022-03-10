@@ -1,6 +1,18 @@
 
 # music JAL
 
+### Entre na pasta do ProjetoMusica
+
+```
+cd ProjetoMusica
+```
+
+### Entre na pasta do music-jal
+
+```
+cd music-jal
+```
+
 ## Project setup
 
 ```
