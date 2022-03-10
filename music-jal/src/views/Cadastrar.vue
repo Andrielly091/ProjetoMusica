@@ -12,7 +12,7 @@
       <input class="input2" type="email" />
       <p id="paragrafo2">Senha</p>
       <input class="input2" type="password" />
-      <button class="botao2">CADASTRO</button>
+      <button style="margin-top:10%" class="botao2">CADASTRO</button>
       <button class="botao">VOLTAR</button>
     </form>
   </div>
@@ -79,7 +79,7 @@ body {
 }
 .botao2 {
   margin-left: 18%;
-  margin-top: 6%;
+  margin-top: -8%;
   padding: 10px 10px;
   color: white;
   background: #23e3d7;
@@ -89,7 +89,7 @@ body {
 }
 .botao {
   margin-left: 18%;
-  margin-top: 5%;
+  margin-top:-35%;
   padding: 8px 8px;
   color: white;
   background: #2277d2;
