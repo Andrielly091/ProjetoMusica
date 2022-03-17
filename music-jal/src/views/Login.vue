@@ -2,16 +2,16 @@
   <form class="formulario">
          <img src="../assets/logo.png" />
         <p style="margin-top: -8%;" id="paragrafo1">Usuário</p>
-        <input style="margin-top: 1%;" class="input1" type="email">
+        <input  v-model="email"  style="margin-top: 1%;" class="input1" type="email">
         <p style="margin-top: %;" id="paragrafo2">Senha</p>
-        <input style="margin-top: 1%;" class="input2" type="password">
+        <input  v-model="senha"  style="margin-top: 1%;" class="input2" type="password">
         <p style="margin-top: 2%;" class="paragrafo3">Esqueceu sua senha?</p>
-        <button style="margin-top: 9%;" class="botao">ENTRAR</button>
-        <button style="margin-top: 7%;" class="botao2">CRIAR PERFIL</button>
+        <button v-on:click="telaPrincipal()" :disabled="!email || !senha" style="margin-top: 9%;" class="botao">ENTRAR</button>
+        <button :disabled="!email || !senha" style="margin-top: 7%;" class="botao2">CRIAR PERFIL</button>
       <hr><br>
       <hr class="hr2">
-      <p style="margin-top: -14%;" class="sugestao">Precisa <br> de ajuda!</p>
-      <p style="margin-top: -5%;" class="sugestao2">Cadastrar</p>
+      <p v-on:click="ajudar()" style="margin-top: -14%;" class="sugestao">Precisa <br> de ajuda!</p>
+      <p v-on:click="telaCadastro()" style="margin-top: -5%;" class="sugestao2">Cadastrar</p>
 
     </form>
 </template>
@@ -20,20 +20,29 @@
 export default {
   name: "LoginItem",
   data() {
-
+    return{
+      email: '',
+      senha: '',
+    }
+    
   },
   methods: {
-    login() {
-      this.exibirAlerta = false;
-      var emailAdmin = "admin@gmail.com";
-      var senhaAdmin = "123456";
-      if (this.email === emailAdmin && this.senha === senhaAdmin) {
-        this.$router.push({ name: "posts" });
-      } else {
-        this.exibirAlerta = true;
-        this.senha = "";
-      }
+
+     telaPrincipal(){
+       if(this.email == 'projeto@discente.ifpe.edu.br' && this.senha =='amigos123'){
+         this.$router.push('/');
+       }else {
+         alert('Login ou senha inválido(s).');
+         this.senha = '';
+       }
     },
+     telaCadastro(){
+         this.$router.push('/cadastro');
+     }, 
+     ajudar(){
+       alert('Acessar e-mail:  musicjal2022@gmail.com')
+     },
+    
   },
 };
 </script>
@@ -94,7 +103,7 @@ export default {
            width: 32%;
         }
         .botao2{
-            margin-left:37%; 
+            margin-left:33.5%; 
             margin-top: 5%; 
             padding: 8px 8px;
            color:white;

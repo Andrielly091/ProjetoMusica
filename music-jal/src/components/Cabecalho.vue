@@ -11,7 +11,7 @@
         v-model="input"
         placeholder="Buscar por Artista ou Banda"
       />
-      <button @click="sbmtbtn">Pesquisar</button>
+      <button v-on:click="telaAudios()">Pesquisar</button>
     </div>
   </header>
 </template>
@@ -26,8 +26,8 @@ export default {
   },
 
   methods: {
-    sbmtbtn() {
-      console.log(this.input);
+    telaAudios(){
+      this.$router.push('/audios');
     },
   },
 };
