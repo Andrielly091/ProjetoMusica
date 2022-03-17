@@ -21,7 +21,7 @@
 
 <script>
 export default {
-  name: "CadastroItem",
+  name: "CadastrarItem",
   data() {
     return {
       nome: "",
@@ -43,7 +43,7 @@ body {
 }
 .formulario {
   border: 1px solid white;
-  margin-top: 10%;
+  margin-top: 140%;
   width: 400px;
   height: 800%;
   margin-left: 740%;

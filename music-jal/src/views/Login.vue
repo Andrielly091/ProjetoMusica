@@ -94,7 +94,7 @@ export default {
            width: 32%;
         }
         .botao2{
-            margin-left:35%; 
+            margin-left:37%; 
             margin-top: 5%; 
             padding: 8px 8px;
            color:white;
