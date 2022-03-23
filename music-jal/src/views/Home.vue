@@ -52,13 +52,4 @@ export default {
 };
 </script>
 
-<style>
-* {
-  padding: 0;
-  margin: 0;
-  color: #1ea0c0;
-  font-family: "Roboto", sans-serif;
-  font-style: normal;
-  font-weight: normal;
-}
-</style>
+<style></style>

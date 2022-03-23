@@ -1,22 +1,24 @@
-/* eslint-disable no-unused-vars */
-
 <template>
   <div>
     <h1>Musicas</h1>
-    <div class="cards">
-      <div class="card" v-for="d in data" :key="d.artistId">
-        
+    <div class="container">
+      <div v-for="d in data" :key="d.artistId">
+        <p>{{ d.artistId }}</p>
+        <p>{{ d.trackCensoredName }}</p>
+        <p>{{ d.previewUrl }}</p>
+        <audio controls>
+          <source v-bind:src="d.previewUrl" />
+          Seu navegador não suporta a tag de áudio.
+        </audio>
+        <!-- <av-bars audio-src= {{ d.previewUrl }}> </av-bars> -->
       </div>
     </div>
   </div>
 </template>
 
 <script>
-// eslint-disable-next-line no-unused-vars
-import { getMusics } from "../services/musicApi.js"
-// eslint-disable-next-line no-unused-vars
-import { data, arrCategorias } from "../services/dataMusics";
-
+// import getMusics from "../services/musicApi";
+import { data } from "../services/musicsData";
 
 export default {
   name: "AudiosItem",
@@ -27,9 +29,9 @@ export default {
   },
 
   async mounted() {
-    const result = await getMusics(31530843);
-    console.log(result)
-    
+    console.log(data);
+    // const fetchMusic = await getMusics(31530843);
+    // console.log(fetchMusic);
   },
 
   methods: {
@@ -40,6 +42,4 @@ export default {
 };
 </script>
 
-<style>
- 
-</style>
+<style></style>
